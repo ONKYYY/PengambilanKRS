@@ -1,6 +1,7 @@
 package com.example.aplikasikrs.ui.notifications
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -33,6 +34,13 @@ class NotificationsFragment : Fragment() {
             loadUserData(nim)
         } else {
             showError("NIM tidak ditemukan")
+        }
+
+        // Tambahkan listener untuk tombol ubah data
+        binding.updateButton.setOnClickListener {
+            val intent = Intent(requireContext(), UpdateProfileActivity::class.java)
+            intent.putExtra("nim", nim) // Kirim NIM ke activity baru
+            startActivity(intent)
         }
 
         return binding.root
