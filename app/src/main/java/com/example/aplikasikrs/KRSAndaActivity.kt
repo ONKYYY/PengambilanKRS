@@ -55,7 +55,7 @@ class KRSAndaActivity : AppCompatActivity() {
         userRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 // Ambil data dari Firebase
-                val nama = snapshot.child("nama").getValue(String::class.java) ?: "Data tidak tersedia"
+                val nama = snapshot.child("Nama").getValue(String::class.java) ?: "Data tidak tersedia"
                 val prodi = snapshot.child("prodi").getValue(String::class.java) ?: "Data tidak tersedia"
                 val dosbing = snapshot.child("dosbing").getValue(String::class.java) ?: "Data tidak tersedia"
 
