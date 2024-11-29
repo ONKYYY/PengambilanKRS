@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".ui.notifications.UpdateProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
@@ -19,12 +23,6 @@
             android:exported="false" />
         <activity
             android:name=".KRSAndaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HomeActivity"
             android:exported="false" />
         <activity
             android:name="com.example.aplikasi.BantuanActivity"
@@ -35,7 +33,6 @@
         <activity
             android:name=".NotificationsFragment"
             android:exported="true" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true"
