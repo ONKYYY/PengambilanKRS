@@ -31,7 +31,10 @@
             android:name=".KRSActivity"
             android:exported="false" />
         <activity
-            android:name=".NotificationsFragment"
+            android:name=".KonsulActivity"
+            android:exported="false" />
+        <activity
+            android:name=".notification.NotificationActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
